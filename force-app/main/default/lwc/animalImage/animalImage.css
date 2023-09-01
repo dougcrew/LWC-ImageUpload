@@ -1,0 +1,9 @@
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: var(--lwc-borderRadiusCircle, 40%);
+  /* max-width: 100%; */
+  height: auto;
+  filter: drop-shadow(0 0 8px rgba(51, 52, 54, 0.4));
+  /* border: var(--lwc-borderWidthThick, 1px) solid #07a7e1; */
+}

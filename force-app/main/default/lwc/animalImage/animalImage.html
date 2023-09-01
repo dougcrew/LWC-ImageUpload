@@ -1,0 +1,24 @@
+<template>
+  <lightning-card title={animalName}>
+    <div class="slds-var-m-around_medium">
+      <template lwc:if={imageUrl}>
+        <img
+          src={imageUrl}
+          alt="Animal Image"
+          class="slds-align_absolute-center"
+        />
+        <div class="slds-text-heading_medium animal-name"></div>
+      </template>
+      <template lwc:else>
+        <lightning-file-upload
+          label="Upload Image"
+          accept={acceptedFormats}
+          record-id={recordId}
+          onuploadfinished={handleUploadFinished}
+          class="slds-align_absolute-center"
+        >
+        </lightning-file-upload>
+      </template>
+    </div>
+  </lightning-card>
+</template>
